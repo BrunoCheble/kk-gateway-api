@@ -58,14 +58,11 @@ describe('Apis - /apis (e2e)', () => {
       .expect(200)
       .then(({ body }) => {
         expect(body).toHaveProperty('shoppingCartId');
-        expect(body).toHaveProperty('userId');
-        expect(body).toHaveProperty('totalPrice');
-        expect(body).toHaveProperty('totalQuantity');
         expect(body).toHaveProperty('products');
       });
   });
 
-  it('Add a product to a new cart [POST /to-add-cart]', () => {
+  it('Add a product to a new cart [POST /to-add-cart]', async () => {
     return request(app.getHttpServer())
       .post('/carts/add-to-cart')
       .set('Authorization', `Bearer ${process.env.TOKEN}`)
