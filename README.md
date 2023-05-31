@@ -11,17 +11,17 @@
 ## Endpoints
 
 **Get all products**
-[GET] - http://localhost:3002/products
+[GET] - http://localhost:3003/products
 
 **View the Cart**
 
-[GET] - http://localhost:3002/carts/:id
+[GET] - http://localhost:3003/carts/:id
 
 [AUTH] - Bearer <AUTH_TOKEN>
 
 **Add a product to cart**
 
-[POST] - http://localhost:3002/carts/add-to-cart
+[POST] - http://localhost:3003/carts/add-to-cart
 
 [AUTH] - Bearer <AUTH_TOKEN>
 
