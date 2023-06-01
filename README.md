@@ -1,4 +1,4 @@
-# Cart API
+# Gateway API
 
 ### Notations
 
