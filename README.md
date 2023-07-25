@@ -42,7 +42,7 @@ productId: Number,
 
 shoppingCartId: Number,
 
-productId: Number,
+productId: Number, 
 
 }
 
